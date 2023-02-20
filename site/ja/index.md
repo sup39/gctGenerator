@@ -2,6 +2,10 @@
 editLink: false
 ---
 
-<JPTranslatorNotice />
+::: danger
+このサイトには実験的な機能とコードが含まれています。
+安定版のコードをダウンロードする場合は[GCT Generator](https://gct.zint.ch/)を使ってください。
+(とは言いますが当サイトはサポミクが管理しているので、お気軽に使っていただいて何か不明点などありましたら Discord にてお気軽に連絡していただければと思います)
+:::
 
 <Generator />

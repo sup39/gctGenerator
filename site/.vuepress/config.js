@@ -1,9 +1,10 @@
 const { description } = require('../../package');
 const themePlugins = require('./data/themePlugins.json');
 const locales = require('./i18n/locales.json');
+const path = require('path');
 
 module.exports = {
-  title: 'GCT Generator',
+  title: 'GCT Generator (dev)',
   description: description,
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -32,7 +33,7 @@ module.exports = {
    * Theme Configuration
    */
   themeConfig: {
-    repo: 'BitPatty/gctGenerator',
+    repo: 'sup39/gctGenerator',
     editLinks: true,
     docsDir: 'site',
     docsBranch: 'master',
@@ -46,4 +47,6 @@ module.exports = {
    * VuePress Plugins
    */
   plugins: ['@vuepress/plugin-back-to-top', '@vuepress/plugin-medium-zoom'],
+
+  dest: path.join(__dirname, '../../docs'),
 };
